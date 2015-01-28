@@ -5,36 +5,19 @@ def pow($base; $n):
 
 def round($decimals):
 	. as $x
-	# Assuming decimal numbers because of tostring.
+	# Assuming decimal numbers.
 	| 10 as $base
 	| pow($base; $decimals) as $shifter
 	| $x * $shifter
-	| tostring
-	| split(".")
-	| .[0] as $integer
+	| floor as $integer
 	| (
-		if (
-			(
-				(
-				.[1][0:1] as $rounder
-				| if ($rounder // "") == "" then
-					"0"
-				else
-					$rounder
-				end
-				)
-				| tonumber
-			)
-			* 2
-		) >= $base then
+		if (((. - $integer) * $base | floor) * 2) >= $base then
 			1
 		else
 			0
 		end
 	) as $rounding
-	| $integer
-	| tonumber
-	| . + $rounding
+	| $integer + $rounding
 	| . / $shifter;
 
 def round:

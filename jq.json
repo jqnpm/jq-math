@@ -1,6 +1,6 @@
 {
     "name": "math",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "A collection of basic mathematical functions.",
     "homepage": "https://github.com/joelpurra/jq-math",
     "bugs": "https://github.com/joelpurra/jq-math/issues",
