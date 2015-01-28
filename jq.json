@@ -1,0 +1,30 @@
+{
+    "name": "math",
+    "version": "0.1.0",
+    "description": "A collection of basic mathematical functions.",
+    "homepage": "https://github.com/joelpurra/jq-math",
+    "bugs": "https://github.com/joelpurra/jq-math/issues",
+    "author": {
+        "name": "Joel Purra",
+        "url": "http://joelpurra.com/"
+    },
+    "main": "./jq/main.jq",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/joelpurra/jq-math.git"
+    },
+    "dependencies": {
+        "joelpurra/jq-dry": "^0.1.0"
+    },
+    "engines": {
+        "jq": "^1.5.0",
+        "jqnpm": "^1.0.0"
+    },
+    "licenses": [{
+        "type": "MIT",
+        "url": "http://opensource.org/licenses/MIT"
+    }],
+    "keywords": [
+        "jq-package"
+    ]
+}
