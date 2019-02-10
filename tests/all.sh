@@ -25,24 +25,24 @@ null
 pow(10; 6)
 1000000
 
-round/0: returns for 0
+round/0: rounds down
 0.3333
-round(0)
+round
 0
 
-round/0: returns for 0
+round/0: rounds up
 0.9
-round(0)
+round
 1
 
-round/0: returns for 0
+round/0: rounds down
 10.3333
-round(0)
+round
 10
 
-round/0: returns for 0
+round/0: rounds up
 10.9
-round(0)
+round
 11
 
 round/1: rounds up.
