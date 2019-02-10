@@ -45,6 +45,21 @@ round/0: rounds up
 round
 11
 
+round/0: rounds half away from zero
+0.5
+round
+1
+
+round/0: rounds half away from zero
+-0.5
+round
+-1
+
+round/0: rounds away from zero
+-10.9
+round
+-11
+
 round/1: rounds up.
 1234.567
 round
@@ -79,6 +94,16 @@ round/1: rounds up for 2
 0.6666
 round(2)
 0.67
+
+round/1: rounds away from zero
+36.475
+round(2)
+36.48
+
+round/1: rounds away from zero
+-36.475
+round(2)
+-36.48
 
 round/1: round down.
 0.123456789

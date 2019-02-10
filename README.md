@@ -28,7 +28,17 @@ Math::pow(2; 10)		# 1024
 
 # Math::round($decimals)
 1234.567 | Math::round(2)		# 1234.57
+
+# Math::round($decimals)
+-1234.567 | Math::round(2)		# -1234.57
 ```
+
+
+
+## Rounding tie-breaker rule
+
+- Rounding uses the [round half away from zero](https://en.wikipedia.org/wiki/Rounding#Round_half_away_from_zero) tie-breaker rule.
+- Additional rounding tie-breaker rules can be implemented; perhaps in a separate rounding package.
 
 
 
